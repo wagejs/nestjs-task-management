@@ -1,6 +1,7 @@
+import "reflect-metadata"
 import { DataSource } from 'typeorm';
 
-export const databaseProviders = [new DataSource({
+export const dataSource = new DataSource({
   type: "postgres",
   host: "localhost",
   port: 5432,
@@ -11,4 +12,4 @@ export const databaseProviders = [new DataSource({
     __dirname + '/../**/*.entity{.ts,.js}',
   ],
   synchronize: true
-})]
+})

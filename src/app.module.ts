@@ -12,6 +12,7 @@ import { TasksModule } from './tasks/tasks.module';
       username: "postgres",
       password: "postgres",
       database: "task-management",
+      // entities: [__dirname + './**/*.entity{.ts,.js}'],
       autoLoadEntities: true,
       synchronize: true
     })
